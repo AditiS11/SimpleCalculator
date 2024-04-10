@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"><!--Specifies the character encoding for the HTML Element-->
+        <meta name="description" content="Javascript Calculator"/><!--Provides the extra infor for search enfine to display relevant data -->
+        <meta name="viewport" content="width=device-width,initial-scale=1"><!--The webpage resizes to the device width making it responsive-->
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        <title>My Calculator</title>
+        <style>
+            input{
+                width:80px;
+                height:60px;
+                font-size:30px;
+                border-radius:10px;/*Helps to create rounded corners for the buttons*/
+                margin:10px;
+                background-color: rgb(33, 20, 20);
+                color:azure;
+                border-style:none;
+
+            }
+            #myform
+            {
+                margin-left:450px;
+                margin-top:20px;
+
+            }
+            h1{
+                text-align:center;
+                font-size:70px;
+                margin-right:150px;
+                margin-top:20px;
+
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Basic Calculator</h1>
+        <br/>
+        <form id="myform" Name="calc">
+            <input name="display" style="width:385px;height:100px;text-align:center;background-color:rgb(77, 77, 100);color:azure;"/><br/>
+            <input type="button" value="0" OnClick="calc.display.value+='0'">
+            <input type="button" value="1" OnClick="calc.display.value+='1'">
+            <input type="button" value="2" OnClick="calc.display.value+='2'">
+            <input type="button" value="+" OnClick="calc.display.value+='+'" style="background-color:rgb(77, 77, 100);"><br/>
+            <input type="button" value="3" OnClick="calc.display.value+='3'">
+            <input type="button" value="4" OnClick="calc.display.value+='4'">
+            <input type="button" value="5" OnClick="calc.display.value+='5'">
+            <input type="button" value="-" OnClick="calc.display.value+='-'" style="background-color:rgb(77, 77, 100);"><br/>
+            <input type="button" value="6" OnClick="calc.display.value+='6'">
+            <input type="button" value="7" OnClick="calc.display.value+='7'">
+            <input type="button" value="8" OnClick="calc.display.value+='8'">
+            <input type="button" value="X" OnClick="calc.display.value+='*'" style="background-color:rgb(77, 77, 100);"><br/>
+            <input type="button" value="9" OnClick="calc.display.value+='9 '">
+            <input type="button" value="C" OnClick="calc.display.value=''"style="background-color:rgb(77, 77, 100);">
+            <input type="button" value="=" OnClick="calc.display.value=eval(calc.display.value)" style="background-color:rgb(77, 77, 100);">
+            <input type="button" value="&#247;" OnClick="calc.display.value+='/'" style="background-color:rgb(77, 77, 100);"><!--This representation is used to create the division entity-->
+
+ 
+        </form>
+
+    </body>
+</html>
